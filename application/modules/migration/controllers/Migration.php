@@ -13,7 +13,7 @@ class Migration extends HMVC_Controller
         if (!$this->migration->current()) {
             $this->migration->error_string();
         } else {
-            $this->load->view("v_runmigrations");
+            $this->load->view("v_runmigration");
         }
     }
 }
